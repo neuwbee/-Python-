@@ -1,0 +1,657 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOv/Pm2M1CchpuUy9+M+emF",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/neuwbee/-Python-/blob/main/4%EC%A3%BC%EC%B0%A8%20%EC%88%98%EC%97%85%EB%82%B4%EC%9A%A9.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a= [1,2,3,4,5]"
+      ],
+      "metadata": {
+        "id": "q186916n5H20"
+      },
+      "execution_count": 1,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 2,
+      "metadata": {
+        "id": "QClNnErd5GAs"
+      },
+      "outputs": [],
+      "source": [
+        "# 1,2,3,4,5가 들어있는 리스트를 a에 할당하라.- 시험문제"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "i = 1\n",
+        "\n",
+        "while i<10:\n",
+        "  print('출력')\n",
+        "  i = 10"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uqx0N-iO5cjm",
+        "outputId": "cdfa09ff-cdfa-468d-c44d-04ea20113fa3"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "출력\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#. i를 원하는 개수만큼 출력시키고 싶을때: i : i+1 (i+1를 i에 할당하라) = i+=1\n",
+        "\n",
+        "i = 1\n",
+        "\n",
+        "while i<10:\n",
+        "  print('출력')\n",
+        "  i = i+1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "tGDn2STm8Xvn",
+        "outputId": "13ab17de-1dd3-4274-c73d-b5cc655db014"
+      },
+      "execution_count": 5,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "출력\n",
+            "출력\n",
+            "출력\n",
+            "출력\n",
+            "출력\n",
+            "출력\n",
+            "출력\n",
+            "출력\n",
+            "출력\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "alphabet = ['a', 'b', 'c', 'd']\n",
+        "\n",
+        "for each_char in alphabet:\n",
+        "  print(each_char)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nuzE0Cb79Yjp",
+        "outputId": "ee18fbe7-ec3f-4c87-c076-28b87ceb8108"
+      },
+      "execution_count": 6,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "a\n",
+            "b\n",
+            "c\n",
+            "d\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "range(1,100)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OQBIyF4O-v-H",
+        "outputId": "98cb897c-9416-4636-a791-4e34e45eb1eb"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "range(1, 100)"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 8
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "eey5fRCm_ObH"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list(range(1,100))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "collapsed": true,
+        "id": "pWSItrI0_H9-",
+        "outputId": "0e077b4e-5d87-4ebf-d214-4cc7dbfab143"
+      },
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1,\n",
+              " 2,\n",
+              " 3,\n",
+              " 4,\n",
+              " 5,\n",
+              " 6,\n",
+              " 7,\n",
+              " 8,\n",
+              " 9,\n",
+              " 10,\n",
+              " 11,\n",
+              " 12,\n",
+              " 13,\n",
+              " 14,\n",
+              " 15,\n",
+              " 16,\n",
+              " 17,\n",
+              " 18,\n",
+              " 19,\n",
+              " 20,\n",
+              " 21,\n",
+              " 22,\n",
+              " 23,\n",
+              " 24,\n",
+              " 25,\n",
+              " 26,\n",
+              " 27,\n",
+              " 28,\n",
+              " 29,\n",
+              " 30,\n",
+              " 31,\n",
+              " 32,\n",
+              " 33,\n",
+              " 34,\n",
+              " 35,\n",
+              " 36,\n",
+              " 37,\n",
+              " 38,\n",
+              " 39,\n",
+              " 40,\n",
+              " 41,\n",
+              " 42,\n",
+              " 43,\n",
+              " 44,\n",
+              " 45,\n",
+              " 46,\n",
+              " 47,\n",
+              " 48,\n",
+              " 49,\n",
+              " 50,\n",
+              " 51,\n",
+              " 52,\n",
+              " 53,\n",
+              " 54,\n",
+              " 55,\n",
+              " 56,\n",
+              " 57,\n",
+              " 58,\n",
+              " 59,\n",
+              " 60,\n",
+              " 61,\n",
+              " 62,\n",
+              " 63,\n",
+              " 64,\n",
+              " 65,\n",
+              " 66,\n",
+              " 67,\n",
+              " 68,\n",
+              " 69,\n",
+              " 70,\n",
+              " 71,\n",
+              " 72,\n",
+              " 73,\n",
+              " 74,\n",
+              " 75,\n",
+              " 76,\n",
+              " 77,\n",
+              " 78,\n",
+              " 79,\n",
+              " 80,\n",
+              " 81,\n",
+              " 82,\n",
+              " 83,\n",
+              " 84,\n",
+              " 85,\n",
+              " 86,\n",
+              " 87,\n",
+              " 88,\n",
+              " 89,\n",
+              " 90,\n",
+              " 91,\n",
+              " 92,\n",
+              " 93,\n",
+              " 94,\n",
+              " 95,\n",
+              " 96,\n",
+              " 97,\n",
+              " 98,\n",
+              " 99]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 10
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "list(range(1, 100, 2)) # 홀수, 짝수 출력할때 [1부터 100까지 2간격으로 생성하라]"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "collapsed": true,
+        "id": "ZSirJ1cJ_Usd",
+        "outputId": "fd88134e-8bcc-4cd8-cdf8-d27fd8e39d15"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "[1,\n",
+              " 3,\n",
+              " 5,\n",
+              " 7,\n",
+              " 9,\n",
+              " 11,\n",
+              " 13,\n",
+              " 15,\n",
+              " 17,\n",
+              " 19,\n",
+              " 21,\n",
+              " 23,\n",
+              " 25,\n",
+              " 27,\n",
+              " 29,\n",
+              " 31,\n",
+              " 33,\n",
+              " 35,\n",
+              " 37,\n",
+              " 39,\n",
+              " 41,\n",
+              " 43,\n",
+              " 45,\n",
+              " 47,\n",
+              " 49,\n",
+              " 51,\n",
+              " 53,\n",
+              " 55,\n",
+              " 57,\n",
+              " 59,\n",
+              " 61,\n",
+              " 63,\n",
+              " 65,\n",
+              " 67,\n",
+              " 69,\n",
+              " 71,\n",
+              " 73,\n",
+              " 75,\n",
+              " 77,\n",
+              " 79,\n",
+              " 81,\n",
+              " 83,\n",
+              " 85,\n",
+              " 87,\n",
+              " 89,\n",
+              " 91,\n",
+              " 93,\n",
+              " 95,\n",
+              " 97,\n",
+              " 99]"
+            ]
+          },
+          "metadata": {},
+          "execution_count": 11
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "for odd_num in range(1,10,2): # 1부터 10까지 2간격으로 odd_num이라는 반복문에 할당하라\n",
+        "  print(odd_num)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "DsgCvPKy_dCV",
+        "outputId": "e9002384-2321-4c8c-97ae-072221909e95"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "3\n",
+            "5\n",
+            "7\n",
+            "9\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Quiz 2\n",
+        "# 1+2+3+4+5+6+7+8+9\n",
+        "\n",
+        "a = 1\n",
+        "total_num = 0\n",
+        "while a<10:\n",
+        "  total_num+= a\n",
+        "  print(total_num)\n",
+        "  a+=1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "QQhCGHEeALlT",
+        "outputId": "fa252efc-5d6f-4e00-9f97-e42514a87c0c"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "3\n",
+            "6\n",
+            "10\n",
+            "15\n",
+            "21\n",
+            "28\n",
+            "36\n",
+            "45\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "left_num = 2\n",
+        "\n",
+        "\n",
+        "while left_num<10:\n",
+        "  print('<'+str(left_num)+'단>')\n",
+        "\n",
+        "  right_num = 1\n",
+        "  while right_num<10:\n",
+        "    print(str(left_num)+'*'+str(right_num)+'='+str(left_num*right_num))\n",
+        "    right_num = right_num+1\n",
+        "left_num = left_num+1\n",
+        "\n",
+        "\n",
+        ""
+      ],
+      "metadata": {
+        "id": "Ji2Ujb-dSd5l"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "|# Quiz 3\n",
+        "list_1 = list(range(1,10,2))\n",
+        "total_num=0\n",
+        "\n",
+        "for each_number in list_1:\n",
+        "  #print(each_number)\n",
+        "  total_num = total_num + each_number\n",
+        "  print(total_num)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XsIy3riSE1Rn",
+        "outputId": "67c8e119-a3a1-44ee-e565-59e03108ec80"
+      },
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "4\n",
+            "9\n",
+            "16\n",
+            "25\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "a = [1,2,3,4,5]\n",
+        "\n",
+        "for each_num in a:\n",
+        "  print(each_num)\n",
+        "  if each_num ==3:\n",
+        "\n",
+        "    break\n",
+        "\n",
+        "    # print(each_num)의 위치에 따라 값이 달라짐"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "uG5dRZd4GvxQ",
+        "outputId": "0f20baec-eb19-4104-afb9-fb7d9a2ed757"
+      },
+      "execution_count": 34,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "1\n",
+            "2\n",
+            "3\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#. 연습문제 1\n",
+        "lunch_list = ['국밥', '돈까스', '김치찌개', '쌀국수', '햄버거']\n",
+        "index_num = len(lunch_list)\n",
+        "flag = 0\n",
+        "\n",
+        "while flag<index_num:\n",
+        "  print(lunch_list[flag])\n",
+        "  flag = flag+1\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "t4E_QzHLLx0b",
+        "outputId": "f2a56b01-a05c-4551-fcb4-a6b1beac318d"
+      },
+      "execution_count": 43,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "국밥\n",
+            "돈까스\n",
+            "김치찌개\n",
+            "쌀국수\n",
+            "햄버거\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#. 연습문제 2\n",
+        "lunch_list = ['국밥', '돈까스', '김치찌개', '쌀국수', '햄버거']\n",
+        "\n",
+        "for each_menu in lunch_list:\n",
+        "  print(each_menu)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "OGoneNpfMDH4",
+        "outputId": "8b7264b1-87cb-4e3e-86eb-2ed0910de5da"
+      },
+      "execution_count": 40,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "국밥\n",
+            "돈까스\n",
+            "김치찌개\n",
+            "쌀국수\n",
+            "햄버거\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 연습문제\n",
+        "user_input = int(input(\"숫자를 입력해주세요 : \"))\n",
+        "\n",
+        "total_num = 0\n",
+        "i = 0\n",
+        "\n",
+        "while i<=user_input:\n",
+        "\n",
+        "  total_num = total_num+i\n",
+        "  print(total_num)\n",
+        "  i = i+1"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "B-gNKhYUS22c",
+        "outputId": "dddbc156-a002-4793-c4ff-9b992253e3c5"
+      },
+      "execution_count": 66,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "숫자를 입력해주세요 : 10\n",
+            "0\n",
+            "1\n",
+            "3\n",
+            "6\n",
+            "10\n",
+            "15\n",
+            "21\n",
+            "28\n",
+            "36\n",
+            "45\n",
+            "55\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "jE-vWE1PVITT"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
